@@ -1,10 +1,10 @@
 package strategy;
 
-public class King extends Character {
+public class Queen extends Character {
     
-    public King(String name) {
+    public Queen(String name) {
         super(name);
-        weaponBehavior = new WeaponSword();
+        weaponBehavior = new WeaponKnife();
     }
 
     public String attack() {

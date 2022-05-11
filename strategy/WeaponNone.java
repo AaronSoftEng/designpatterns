@@ -1,6 +1,6 @@
 package strategy;
 
-public class WeaponNone {
+public class WeaponNone implements WeaponBehavior {
     
     public String attack() {
         //Randomly returns one of possible strings

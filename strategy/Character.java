@@ -10,7 +10,9 @@ public abstract class Character {
 
     public abstract String attack();
 
-    public abstract void setWeaponBehavior(WeaponBehavior wb);
+    public void setWeaponBehavior(WeaponBehavior wb) {
+        weaponBehavior = wb;
+    }
 
     public abstract String toString();
 }

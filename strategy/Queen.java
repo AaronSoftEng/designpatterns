@@ -27,6 +27,6 @@ public class Queen extends Character {
      * @return The name and type of character.
      */
     public String toString() {
-        return this.name + " is a Noble King";
+        return this.name + " is a beautiful queen";
     }
 }

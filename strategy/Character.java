@@ -17,12 +17,16 @@ public abstract class Character {
     /**
      * @return The weapon attack of the specified character.
      */
-    public abstract String attack();
+    public String attack() {
+        return weaponBehavior.attack();
+    }
 
     /**
      * @param wb is the type of weapon that will be used, such as WeaponSword().
      */
-    public abstract void setWeaponBehavior(WeaponBehavior wb);
+    public void setWeaponBehavior(WeaponBehavior wb) {
+        weaponBehavior = wb;
+    }
 
     /**
      * @return The name and type of character.

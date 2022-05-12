@@ -11,18 +11,7 @@ public class Queen extends Character {
         super(name);
         weaponBehavior = new WeaponKnife();
     }
-    /**
-     * @return The weapon attack of the Queen's knife.
-     */
-    public String attack() {
-        return weaponBehavior.attack();
-    }
-    /**
-     * @param wb is the type of weapon that will be used, such as a WeaponKnife().
-     */
-    public void setWeaponBehavior(WeaponBehavior wb) {
-        weaponBehavior = wb;
-    }
+
     /**
      * @return The name and type of character.
      */

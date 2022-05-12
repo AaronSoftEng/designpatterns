@@ -1,7 +1,12 @@
+/**
+ * @author Aaron L. Keys
+ */
 package strategy;
 
 public class WeaponNone implements WeaponBehavior {
-    
+    /**
+     * @return The weapon attack type for no weapon.
+     */    
     public String attack() {
         //Randomly returns one of possible strings
         String ohNo = "Oh no! I lost my weapon";

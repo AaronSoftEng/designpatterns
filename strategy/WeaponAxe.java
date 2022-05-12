@@ -1,7 +1,12 @@
+/**
+ * @author Aaron L. Keys
+ */
 package strategy;
 
 public class WeaponAxe implements WeaponBehavior {
-    
+    /**
+     * @return The weapon attack type for Axe.
+     */
     public String attack() {
         //Randomly returns one of possible strings
         String twirl = "Twirl with an axe";

@@ -1,6 +1,12 @@
+/**
+ * @author Aaron L. Keys
+ */
 package strategy;
 
 public class WeaponKnife implements WeaponBehavior {
+    /**
+     * @return The weapon attack type for Knife.
+     */
     public String attack() {
         //Randomly returns one of possible strings
         String slice = "Slice with knife";

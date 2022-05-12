@@ -1,7 +1,12 @@
+/**
+ * @author Aaron L. Keys
+ */
 package strategy;
 
 public class WeaponBow implements WeaponBehavior {
-    
+    /**
+     * @return The weapon attack type for Bow.
+     */    
     public String attack() {
         //Randomly returns one of possible strings
         String draw = "Draw and loose an arrow";

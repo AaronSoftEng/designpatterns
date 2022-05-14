@@ -1,3 +1,6 @@
+/**
+ * @author Aaron L. Keys
+ */
 package observer;
 
 public interface Observer {

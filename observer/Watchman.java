@@ -27,6 +27,15 @@ public class Watchman implements Subject {
     
     public void issueWarning(int warning) {
         this.warning = warning;
+        
+        if(warning == 1) {
+            System.out.println("WARNING:  1 trumpet was played!");
+        } else if(warning == 2) {
+            System.out.println("WARNING:  2 trumpets were played!");
+        } else {
+            //Error message
+            System.out.println("UNKNOWN NUMBER OF TRUMPETS PLAYED!");
+        }
         notifyObservers();
     }
 }

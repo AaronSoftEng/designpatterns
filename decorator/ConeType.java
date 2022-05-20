@@ -1,3 +1,6 @@
+/**
+ * @author Aaron L. Keys
+ */
 package decorator;
     
     public enum ConeType {

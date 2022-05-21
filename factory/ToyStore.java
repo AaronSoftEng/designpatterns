@@ -4,9 +4,9 @@ public abstract class ToyStore extends Puzzle {
     
     public String orderPuzzle(String type) {
         Puzzle newPuzzle = createPuzzle(type);
-        assemble();
-        bo
-        return newPuzzle.;
+        newPuzzle.assemble();
+        newPuzzle.boxPuzzle();
+        return newPuzzle.pieces.toString();
     }
 
     public abstract Puzzle createPuzzle(String type);

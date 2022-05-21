@@ -1,5 +1,7 @@
 package factory;
 
+import java.util.ArrayList;
+
 public class FisherPriceStore extends ToyStore {
     
     /**
@@ -10,7 +12,13 @@ public class FisherPriceStore extends ToyStore {
      * @return
      */
     public Puzzle createPuzzle(String type) {
-        if(type == PlasticColorPuzzle)
+        if(type.equals()) {
+            return new FisherPriceStore();
+        } else if (type.equals()) {
+
+        } else {
+            return null;
+        }
         return PlasticColorPuzzle
     }
 }

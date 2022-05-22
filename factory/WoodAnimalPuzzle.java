@@ -1,8 +1,15 @@
+/**
+ * @author Aaron L. Keys
+ */
 package factory;
 
 public class WoodAnimalPuzzle extends Puzzle {
-    
+    /**
+     * This constructor method adds values to pieces and prints out the set
+     * related to it.
+     */
     public WoodAnimalPuzzle() {
+        String result = "";
         this.name = "Animal Puzzle by Melissa and Doug";
         this.material = "wood";
         this.pieces.add("Horse");
@@ -11,5 +18,9 @@ public class WoodAnimalPuzzle extends Puzzle {
         this.pieces.add("Cat");
         this.pieces.add("Cow");
         this.pieces.add("Chicken");
+        for(String piece: pieces) {
+            result += "-  " + piece + "\n";
+        }
+        System.out.print(result);
     }
 }

@@ -1,24 +1,27 @@
+/**
+ * @author Aaron L. Keys
+ */
 package factory;
 
-import java.util.ArrayList;
-
 public class FisherPriceStore extends ToyStore {
-    
+
     /**
-     * If the user passes in color it will return a PlasticColorPuzzle,
-     * If the user passes in animal it will return a PlasticAnimalPuzzle
+     * This method creates a puzzle depending on the value given to it
+     * by the driver class.
      * Otherwise null
-     * @param type
-     * @return
+     * @param type is the type of puzzle it will be (animal/color)
+     * @return a puzzle based on the type given.
      */
     public Puzzle createPuzzle(String type) {
-        if(type.equals()) {
-            return new FisherPriceStore();
-        } else if (type.equals()) {
-
+        if(type.equals("color")) {
+            System.out.println("Putting together a Color Puzzle by Fisher Price");
+            return new PlasticColorPuzzle();
+        } else if(type.equals("animal")) {
+            System.out.println("Putting together a Animal Puzzle by Fisher Price");
+            return new PlasticAnimalPuzzle();
         } else {
             return null;
         }
-        return PlasticColorPuzzle
+
     }
 }

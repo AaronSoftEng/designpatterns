@@ -1,3 +1,6 @@
+/**
+ * @author Aaron L. Keys
+ */
 package factory;
 
 import java.util.*;
@@ -5,13 +8,14 @@ import java.util.*;
 public class Puzzle {
     protected String name;
     protected String material;
-    protected ArrayList<String> pieces;
-    protected ArrayList<String> colors;
-    public Puzzle() {
-        
-    }
-
-    public String assemble() { //toString method
+    protected ArrayList<String> pieces = new ArrayList<String>();
+    /**
+     * This method assembles the puzzle together based on
+     * the type given.
+     * @return the string to be displayed to the user based on
+     * the original type given to it by the driver class.
+     */
+    public String assemble() { 
         String result = "";
 
         result += "Putting together a " + name + "\n" +
@@ -22,8 +26,12 @@ public class Puzzle {
         }
         return result;
     }
-
+    /**
+     * This method tells the user the name of the type of
+     * puzzle box being created.
+     * @return the String to display the puzzle box type.
+     */
     public String boxPuzzle() {
-        return "Putting the " + name + "in a box";
+        return "Putting the " + name + " in a box";
     }
 }

@@ -1,8 +1,15 @@
+/**
+ * @author Aaron L. Keys
+ */
 package factory;
 
 public class PlasticAnimalPuzzle extends Puzzle {
-    
+    /**
+     * This constructor method adds values to pieces and prints out the set
+     * related to it.
+     */    
     public PlasticAnimalPuzzle() {
+        String result = "";
         this.name = "Animal Puzzle by Fisher Price";
         this.material = "plastic";
         this.pieces.add("Fox");
@@ -10,5 +17,10 @@ public class PlasticAnimalPuzzle extends Puzzle {
         this.pieces.add("Giraffe");
         this.pieces.add("Owl");
         this.pieces.add("Monkey");
+        System.out.println("This puzzle is a made out of plastic");
+        for(String piece: pieces) {
+            result += "-  " + piece + "\n";
+        }
+        System.out.print(result);
     }
 }

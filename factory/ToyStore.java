@@ -1,12 +1,15 @@
+/**
+ * @author Aaron L. Keys
+ */
 package factory;
 
 public abstract class ToyStore extends Puzzle {
-    
+
     public String orderPuzzle(String type) {
-        Puzzle newPuzzle = createPuzzle(type);
-        newPuzzle.assemble();
-        newPuzzle.boxPuzzle();
-        return newPuzzle.pieces.toString();
+        Puzzle puzzle = createPuzzle(type);
+        puzzle.assemble();
+        
+        return puzzle.boxPuzzle();
     }
 
     public abstract Puzzle createPuzzle(String type);

@@ -18,6 +18,9 @@ public class WoodAnimalPuzzle extends Puzzle {
         this.pieces.add("Cat");
         this.pieces.add("Cow");
         this.pieces.add("Chicken");
+        System.out.println("This puzzle is a made out of " + this.material);
+        System.out.println("Adding the following pieces");
+
         for(String piece: pieces) {
             result += "-  " + piece + "\n";
         }

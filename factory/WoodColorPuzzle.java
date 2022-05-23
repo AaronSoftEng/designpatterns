@@ -21,6 +21,9 @@ public class WoodColorPuzzle extends Puzzle {
         this.pieces.add("Brown Fish");
         this.pieces.add("White Fish");
         this.pieces.add("Black Fish");
+        System.out.println("This puzzle is a made out of " + this.material);
+        System.out.println("Adding the following pieces");
+
         for(String piece: pieces) {
             result += "-  " + piece + "\n";
         }

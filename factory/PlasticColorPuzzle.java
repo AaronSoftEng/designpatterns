@@ -18,7 +18,7 @@ public class PlasticColorPuzzle extends Puzzle {
         this.pieces.add("Blue Dog");
         this.pieces.add("Yellow Dog");
         this.pieces.add("Brown Dog");
-        System.out.println("This puzzle is a made out of plastic");
+        System.out.println("This puzzle is a made out of " + this.material);
         System.out.println("Adding the following pieces");
         
         for(String piece: pieces) {

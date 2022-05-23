@@ -17,7 +17,9 @@ public class PlasticAnimalPuzzle extends Puzzle {
         this.pieces.add("Giraffe");
         this.pieces.add("Owl");
         this.pieces.add("Monkey");
-        System.out.println("This puzzle is a made out of plastic");
+        System.out.println("This puzzle is a made out of " + this.material);
+        System.out.println("Adding the following pieces");
+
         for(String piece: pieces) {
             result += "-  " + piece + "\n";
         }
